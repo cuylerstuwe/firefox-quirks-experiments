@@ -1,10 +1,10 @@
 import "../modules/startedLog";
 
-const number = Math.floor(Math.random() * 1000);
+const CONTENT_SCRIPT_INSTANCE_ID = Math.floor(Math.random() * 1000);
 
 async function main() {
     window.addEventListener("message", () => {
-        console.log("Number is", number);
+        console.log("Number is", CONTENT_SCRIPT_INSTANCE_ID);
     });
 }
 
